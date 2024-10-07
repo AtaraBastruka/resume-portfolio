@@ -1,11 +1,9 @@
 {
     "basics": {
       "name": "John Doe",
-      "label": "Programmer",
-      "image": "",
-      "email": "john@gmail.com",
-      "phone": "(912) 555-4321",
-      "url": "https://johndoe.com",
+      "label": "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
+      "image": "/images/perfil.jpg",
+      "url": "",
       "summary": "A summary of John Doe…",
       "location": {
         "address": "2712 Broadway St",
@@ -14,9 +12,22 @@
         "countryCode": "US",
         "region": "California"
       },
-      "profiles": [{
-        "network": "Twitter",
-        "username": "john",
+      "contact": [
+      {
+        "network": "Email",
+        "username": "john@gmail.com",
+        "icon": "mail",
+        "url": "mailto:john@gmail.com"
+      },{
+        "network": "Phone",
+        "username": "+50763033563",
+        "icon": "phone",
+        "url": "tel:+50763033563"
+      },
+      {
+        "network": "Linkedin",
+        "username": "john.amazin-xdxd",
+        "icon": "linkedin",
         "url": "https://twitter.com/john"
       }]
     },
@@ -29,17 +40,6 @@
       "summary": "Description…",
       "highlights": [
         "Started the company"
-      ]
-    }],
-    "volunteer": [{
-      "organization": "Organization",
-      "position": "Volunteer",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
       ]
     }],
     "education": [{
