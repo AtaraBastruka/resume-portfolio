@@ -1,0 +1,126 @@
+
+{
+    "basics": {
+      "name": "John Doe",
+      "label": "Web Developer",
+      "image": "/img/perfil.jpg",
+      "url": "",
+      "summary": "A summary of John Doe…",
+      "location": {
+        "address": "2712 Broadway St",
+        "postalCode": "CA 94115",
+        "city": "San Francisco",
+        "countryCode": "US",
+        "region": "California"
+      },
+      "contact": [
+      {
+        "network": "Email",
+        "username": "john@gmail.com",
+        "icon": "mail",
+        "url": "mailto:john@gmail.com"
+      },{
+        "network": "Phone",
+        "username": "+50763033563",
+        "icon": "phone",
+        "url": "tel:+50763033563"
+      },
+      {
+        "network": "Linkedin",
+        "username": "john.amazin-xdxd",
+        "icon": "linkedin",
+        "url": "https://twitter.com/john"
+      },{
+        "network": "Leli",
+        "username": "john.amazins-xd2",
+        "icon": "linkedin",
+        "url": "https://twitter.com/john"
+      }]
+    },
+    "work": [{
+      "name": "Company",
+      "position": "President",
+      "url": "https://company.com",
+      "startDate": "01/2013",
+      "endDate": "02/2023",
+      "summary": "Description… tur ectetur ante or. Lorem ipsum dolor sit amet, consectetur adipisci",
+      "highlights": [
+        "Started the company"
+      ]},
+      {
+        "name": "Company 2",
+        "position": "Not President",
+        "url": "https://company2.com",
+        "startDate": "04/2023",
+        "endDate": "present", 
+        "summary": "Description longer… ec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tort",
+        "highlights": [
+          "Started the company",
+          "Amazing"
+        ]}],
+    "education": [{
+      "institution": "University",
+      "url": "https://maps.app.goo.gl/iGYM6zmSxb8y7453A",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }],
+    "awards": [{
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }],
+    "certificates": [{
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }],
+    "publications": [{
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }],
+    "skills": [{
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    }],
+    "languages": [{
+      "language": "English",
+      "fluency": "Native speaker"
+    }],
+    "interests": [{
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }],
+    "references": [{
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }],
+    "projects": [{
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    }]
+  }

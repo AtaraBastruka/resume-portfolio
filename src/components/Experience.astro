@@ -1,0 +1,35 @@
+---
+import resume from '../components/Resume_Data_Helper';
+import parseDate from '../components/Resume_Data_Helper';
+const { work } = resume;
+
+---
+
+<div class="section section__experience">
+    <h1 class="no-margin">Experience</h1>
+    <div class="experiences">
+        {work.sort((a,b) => {
+            const parseDate = (date: string) => {
+                if (date.toLowerCase() === 'present' || date.toLowerCase() === 'p') return new Date();
+                const [month, year] = date.split('/');
+                return new Date(parseInt(year), parseInt(month) - 1);
+            };
+            const datea = parseDate(a.startDate);
+            const dateb = parseDate(b.startDate);
+            return dateb.getTime() - datea.getTime();
+        })
+        .map((item, index)=>(
+        <div class="experience">
+                <h2 class="organization">{item.name}</h2>
+                <p class="position">{item.position}</p>
+                <p class="dates">{item.startDate} - {item.endDate.toUpperCase()}</p>
+                <p class="summary">{item.summary}</p>
+                <ul class="highlights">
+                    {item.highlights.map((highlight, index)=>(
+                        <li>{highlight}</li>
+                    ))}
+                </ul>
+        </div>
+        ))}
+    </div>
+</div>

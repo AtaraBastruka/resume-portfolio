@@ -1,0 +1,15 @@
+---
+interface Props {
+	name: string;
+}
+
+const { name } = Astro.props;
+
+const { default: Icon } = await import(`../icons/${name}.svg?react`)
+---
+
+<Icon/>
+
+
+
+
