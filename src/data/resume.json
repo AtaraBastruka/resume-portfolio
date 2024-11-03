@@ -5,7 +5,7 @@
       "label": "Web Developer",
       "image": "/img/perfil.jpg",
       "url": "",
-      "summary": "A summary of John Doe…",
+      "summary": "A summary of John Doe… lorem ipsum dolor sit amet, consectetur adipisci lelas lolsa jsmad asdoekas dsjaoquens dmasdoe",
       "location": {
         "address": "2712 Broadway St",
         "postalCode": "CA 94115",
@@ -59,16 +59,18 @@
           "Amazing"
         ]}],
     "education": [{
-      "institution": "University",
+      "institution": "University 1",
       "url": "https://maps.app.goo.gl/iGYM6zmSxb8y7453A",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "score": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL"
-      ]
+      "area": "Bachelor's Degree in Software Development",
+      "startDate": "03/2014",
+      "endDate": "Present"
+    },
+    {
+      "institution": "High School 1",
+      "url": "https://maps.app.goo.gl/iGYM6zmSxb8y7453A",
+      "area": "High Schools's Degree in Science",
+      "startDate": "01/2011",
+      "endDate": "02/2013"
     }],
     "awards": [{
       "title": "Award",

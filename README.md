@@ -1,4 +1,4 @@
-# Astro Starter Kit: Basics
+# Portafolio CV Minimalista con JSON hecho con Astro
 
 ```sh
 npm create astro@latest -- --template basics
@@ -52,3 +52,7 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+## Basado en el proyecto de BartoszJarocki
+https://github.com/BartoszJarocki/cv.git

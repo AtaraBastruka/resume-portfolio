@@ -1,10 +1,62 @@
 ---
+import { map } from 'astro:schema';
 import resume from '../components/Resume_Data_Helper';
 
 const { education } = resume;
 ---
 
 <div class="section">
-    <h1 class="no-margin">Education</h1>
-    
+    <h1 class="no-margin ed">Education</h1>
+    <div class="experiences">
+        {education.sort((a,b) => {
+            const parseDate = (date: string) => {
+                if (date.toLowerCase() === 'present' || date.toLowerCase() === 'p') return new Date();
+                const [month, year] = date.split('/');
+                return new Date(parseInt(year), parseInt(month) - 1);
+            };
+            const datea = parseDate(a.endDate);
+            const dateb = parseDate(b.endDate);
+            return dateb.getTime() - datea.getTime();
+        })
+        .map((item, index)=>(
+        <div class="education">
+            <a href={item.url}><h2 class="institution">{item.institution}</h2></a>
+            <p class="grado">{item.area}</p>
+            <p class="date">{item.startDate} - {item.endDate.toUpperCase()}</p>
+        </div>
+        ))
+        }
+    </div>
 </div>
+
+<style>
+    .ed{
+        margin-bottom: 0.6rem;
+    }
+  .education{
+    display: grid;
+    grid-template-areas: 
+      "institution date" 
+      "area area";
+    margin-bottom: 0.5rem;
+    gap: 0.3rem
+  }
+  .date{
+    grid-area: date;
+    align-self: center;
+    justify-self: end;
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+  .institution{
+    grid-area: institution;
+    font-size: 1.2rem;
+  }
+  .grado{
+    margin: 0.3rem 0.3rem 0.5rem;
+    grid-area: area;
+    font-size: 0.85rem;
+    
+    font-weight: bolder;
+  }
+</style>

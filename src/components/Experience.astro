@@ -14,13 +14,13 @@ const { work } = resume;
                 const [month, year] = date.split('/');
                 return new Date(parseInt(year), parseInt(month) - 1);
             };
-            const datea = parseDate(a.startDate);
-            const dateb = parseDate(b.startDate);
+            const datea = parseDate(a.endDate);
+            const dateb = parseDate(b.endDate);
             return dateb.getTime() - datea.getTime();
         })
         .map((item, index)=>(
         <div class="experience">
-                <h2 class="organization">{item.name}</h2>
+                <a href={item.url}><h2 class="organization">{item.name}</h2></a>
                 <p class="position">{item.position}</p>
                 <p class="dates">{item.startDate} - {item.endDate.toUpperCase()}</p>
                 <p class="summary">{item.summary}</p>
