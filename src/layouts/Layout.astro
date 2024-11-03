@@ -27,7 +27,7 @@ const { title, description } = Astro.props;
 <style is:global>
 	:root {
 		--primario: black;
-		--secundario: gray;
+		--derivado: color-mix(in srgb, var(--primario) 40%, white);
 	}
 	html{
 		box-sizing: border-box
@@ -41,6 +41,7 @@ const { title, description } = Astro.props;
 	body{
 		font-size: 1.6rem;
 		line-height: 2;
+		margin-bottom: 2rem;
 	}
 	h1,h2,h3,h4,h5,h6{
 		color: var(--primario);
@@ -55,7 +56,7 @@ const { title, description } = Astro.props;
 	a{text-decoration: none;}
 	p, li{
   	font-size: 0.8rem;
-	color: var(--secundario);
+	color: var(--derivado);
 	text-wrap: pretty;
 	line-height: 1.5;
 	margin:0;
@@ -88,6 +89,7 @@ const { title, description } = Astro.props;
 		height: 6rem;
 		border-radius: 1rem;
 		justify-self: end;
+		box-shadow:  -0.1rem 0.1rem 5px 1px var(--derivado);
 	}
 	.location{
 		margin-top: 0.2rem;
@@ -143,8 +145,15 @@ const { title, description } = Astro.props;
     justify-self: end;
     font-weight: bold;
 	font-size: 0.75rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: end;
   }
   .organization{
+	gap: 0.5rem;
+	align-items: center;
     grid-area: organization;
     font-size: 1.2rem;
   }
@@ -167,7 +176,7 @@ const { title, description } = Astro.props;
   }
   @media (min-width: 767px) {
   /*Seccion de experiencia*/
-  
+	
   /*Seccion basicos*/
   .image{
     width: 9rem;

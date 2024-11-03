@@ -1,5 +1,5 @@
-
 {
+    "__coment": "Skills levels/niveles: basic, intermediate, expert, sorft; pueden escribirse en mayúsculas o minúsculas y siempre van en inglés",
     "basics": {
       "name": "John Doe",
       "label": "Web Developer",
@@ -41,6 +41,7 @@
       "name": "Company",
       "position": "President",
       "url": "https://company.com",
+      "type": "Remote",
       "startDate": "01/2013",
       "endDate": "02/2023",
       "summary": "Description… tur ectetur ante or. Lorem ipsum dolor sit amet, consectetur adipisci",
@@ -48,9 +49,10 @@
         "Started the company"
       ]},
       {
-        "name": "Company 2",
+        "name": "Tribunal Administrativo de la Función Pública",
         "position": "Not President",
         "url": "https://company2.com",
+        "type": "On-Site",
         "startDate": "04/2023",
         "endDate": "present", 
         "summary": "Description longer… ec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tort",
@@ -92,13 +94,39 @@
       "summary": "Description…"
     }],
     "skills": [{
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ]
+      "name": "HTML",
+      "level": "expert" 
+    },
+    {
+      "name": "CSS",
+      "level": "Intermediate" 
+    },
+    {
+      "name": "JavaScript",
+      "level": "Intermediate" 
+    }, {
+      "name": "React JS",
+      "level": "basic" 
+    },
+    {
+      "name": "Word",
+      "level": "expert" 
+    },
+    {
+      "name": "Excel",
+      "level": "Intermediate" 
+    },
+    {
+      "name": "PowerPoint",
+      "level": "Intermediate" 
+    },
+    {
+      "name": "Reliable",
+      "level": "soft" 
+    },
+    {
+      "name": "Punctual",
+      "level": "soft" 
     }],
     "languages": [{
       "language": "English",

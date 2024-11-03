@@ -94,13 +94,13 @@ interface Reference {
 interface Skill {
     name:     string;
     level:    string;
-    keywords: string[];
 }
 
 interface Experience {
     organization?: string;
     position:      string;
     url:           string;
+    type:          string;
     startDate:     string;
     endDate:       string;
     summary:       string;
