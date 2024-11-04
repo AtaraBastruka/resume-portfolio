@@ -1,0 +1,18 @@
+---
+import resume from '../components/Resume_Data_Helper';
+const { references } = resume;
+---
+
+<div class="section">
+    <h1 class="no-margin">References</h1>
+    <div class="references">
+        {references.map((item, index)=>(
+            <div class="reference">
+                <p class="name">{item.name}</p>
+                <p class="company">{item.company}</p>
+                <p class="position">{item.position}</p>
+                <p class="summary">{item.phone}</p>
+            </div>
+        ))}
+    </div>
+</div>

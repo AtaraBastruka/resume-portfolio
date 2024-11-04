@@ -20,13 +20,13 @@ const { work } = resume;
         })
         .map((item, index)=>(
         <div class="experience">
-                    <a href={item.url}><h2 class="organization">{item.name}</h2></a>
+                <a href={item.url}><h2 class="organization">{item.name}</h2></a>
                 <p class="position">{item.position}</p>
                 <div class="dates">
                     <div class="type">
                         <span class="type__title">{item.type.toUpperCase()}</span>
                     </div>
-                    <p >{item.startDate} - {item.endDate.toUpperCase()}</p>
+                    <p class="dat">{item.startDate} - {item.endDate.toUpperCase()}</p>
                 </div>
                 
                 <p class="summary">{item.summary}</p>
@@ -46,11 +46,24 @@ const { work } = resume;
         text-align: center;
         color: white;
         border-radius: 0.5rem;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         font-weight: bold;
-        width: 4rem;
+        width: 3.5rem;
+    }
+    .dat{
+        font-size: 0.6rem;
     }
     @media (min-width: 767px) {
-        
+        .dat{
+            font-size: 0.7rem;
+        }
+        .type{
+            text-align: center;
+            color: white;
+            border-radius: 0.5rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            width: 4rem;
+        }
     }
 </style>

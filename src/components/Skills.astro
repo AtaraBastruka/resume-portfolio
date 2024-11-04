@@ -28,27 +28,26 @@ const { skills } = resume;
 
 <style>
     .leyenda{
-        width: 6rem;
+        width: 4rem;
         max-width: 5.5rem;
         text-align: center;
         border-radius: 0.5rem;
         text-transform: uppercase;
         font-weight: bold;
         color: white;
+        font-size: 0.5rem;
+    }
+    .skills__leyendas{
+        grid-area: leyenda;
+        display: flex;
+        gap: 0.3rem;
+        align-items: center;
+        justify-content: end;
     }
     .section__skills{
         display: grid;
         grid-template-areas: "titulo leyenda"
                             "skills skills";
-    }
-    .skills__leyendas{
-        grid-area: leyenda;
-        display: flex;
-        font-size: 0.7rem;
-        gap: 0.3rem;
-        align-items: center;
-        justify-content: end;
-        flex-wrap: wrap;
     }
    .skills_titulo{
        grid-area: titulo;
@@ -69,6 +68,8 @@ const { skills } = resume;
         color: white;
         border-radius: 0.5rem;
         font-weight: bold;
+        display: flex;
+        align-items: center;
    }
    .basic{
         background-color: color-mix(in srgb, var(--primario) 30%, white);
@@ -84,7 +85,12 @@ const { skills } = resume;
         color: black;
         border: 0.1rem solid var(--primario);
     }
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
+        .leyenda{
+            width: 6rem;
+            font-size: 0.7rem;
+            color: white;
+        }
         .skills__leyendas{
             flex-flow: row nowrap;
             justify-content: end;

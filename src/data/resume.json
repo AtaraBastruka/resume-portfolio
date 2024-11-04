@@ -141,7 +141,9 @@
     }],
     "references": [{
       "name": "Jane Doe",
-      "reference": "Reference…"
+      "company": "Company",
+      "position": "Position",
+      "phone": "+50763033563"
     }],
     "projects": [{
       "name": "Project",

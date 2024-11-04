@@ -88,7 +88,9 @@ interface Publication {
 
 interface Reference {
     name:      string;
-    reference: string;
+    company:  string;
+    position: string;
+    phone:    string;
 }
 
 interface Skill {
