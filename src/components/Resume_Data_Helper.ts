@@ -2,21 +2,11 @@ interface Resume {
     basics:       Basics;
     work:         Experience[];
     education:    Education[];
-    awards:       Award[];
     certificates: Certificate[];
     publications: Publication[];
     skills:       Skill[];
-    languages:    Language[];
-    interests:    Interest[];
     references:   Reference[];
     projects:     Project[];
-}
-
-interface Award {
-    title:   string;
-    date:    string;
-    awarder: string;
-    summary: string;
 }
 
 interface Basics {
@@ -31,7 +21,6 @@ interface Basics {
 
 interface Location {
     address:     string;
-    postalCode:  string;
     city:        string;
     countryCode: string;
     region:      string;
@@ -57,16 +46,6 @@ interface Education {
     area:        string;
     startDate:   string;
     endDate:     string;
-}
-
-interface Interest {
-    name:     string;
-    keywords: string[];
-}
-
-interface Language {
-    language: string;
-    fluency:  string;
 }
 
 interface Project {

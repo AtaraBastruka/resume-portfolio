@@ -8,11 +8,56 @@ const { references } = resume;
     <div class="references">
         {references.map((item, index)=>(
             <div class="reference">
-                <p class="name">{item.name}</p>
-                <p class="company">{item.company}</p>
-                <p class="position">{item.position}</p>
-                <p class="summary">{item.phone}</p>
+                <h2 class="rname no-padding">{item.name}</h2>
+                <h3 class="company">{item.company}</h3>
+                <p class="rank"> ( {item.position} )</p>
+                <p class="phone"><strong>Phone: </strong>{item.phone}</p>
             </div>
         ))}
     </div>
 </div>
+
+<style>
+    .references{
+        padding: 0.6rem;
+        display: flex;
+        gap: 1rem;
+    }
+    .reference{
+        border: 0.1rem solid var(--derivado);
+        border-radius: 0.5rem;
+        padding: 0.6rem;
+        display: grid;
+        grid-template-areas: 
+            "name name" 
+            "company rank"
+            "summary summary";
+        gap: 0.2rem;
+    }
+    .rname{
+        grid-area: name;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+    }
+    .company{
+        grid-area: company;
+        font-size: 0.8rem;
+        color: var(--derivado);
+        font-weight: bold;
+    }
+    .rank{
+        align-self: start;
+        grid-area: rank;
+        font-size: 0.7rem;
+        font-weight: bolder;
+    }
+    .phone{
+        grid-area: summary;
+        font-size: 0.8rem;
+        font-weight: bold;
+        
+    }
+    strong {
+            color: var(--primario);
+    }
+</style>

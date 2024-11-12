@@ -1,0 +1,61 @@
+---
+    import resume from '../components/Resume_Data_Helper';
+    const {certificates} = resume;
+---
+
+<div class="section">
+    <h1 class="no-margin">Certificates</h1>
+    <div class="certificates">
+        {certificates.sort((a,b) =>{
+            
+            const datea = new Date(a.date);
+            const dateb = new Date(b.date);
+            return dateb.getTime() - datea.getTime();
+        })
+        .map((item, index) => (
+            <div class="certificate">
+                <a href={item.url}>
+                    <h2 class="titulo">{item.name}</h2>
+                </a>
+                <h3 class="issuer">{item.issuer}</h3>
+                <p class="cdate">{`( ${item.date} )`}</p>
+            </div>
+        ))}
+    </div>
+</div>
+
+<style>
+    .certificate{
+        display: grid;
+        grid-template-areas:    "name date" 
+                                "issuer date";
+        gap: 0.5rem;
+        width: 100%;
+    }
+    .titulo{
+        grid-area: name;
+        text-transform: capitalize;
+    }
+    .issuer{
+        padding-left: 0.2rem;
+        grid-area: issuer;
+        text-transform: capitalize;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: var(--derivado);
+    }
+    .cdate{
+        grid-area: date;
+        font-size: 0.7rem;
+        align-self: center;
+        justify-self: end;
+        font-weight: bold;
+    }
+    .certificates{
+        padding: 0.6rem;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+</style>
