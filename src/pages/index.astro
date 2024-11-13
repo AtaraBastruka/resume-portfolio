@@ -9,10 +9,10 @@ import Skills from '../components/Skills.astro';
 import Certificates from '../components/Certificates.astro';
 import References from '../components/References.astro';
 import Hero from '../components/Hero.astro';
-
+const { basics }= resume;
 ---
 
-<Layout title="Resume" description="My resume">
+<Layout title={`Resume - ${basics.name}`} description="My resume">
 	<Hero/>
 	<Experience/>
 	<Education/>
